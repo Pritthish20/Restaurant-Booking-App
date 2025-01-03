@@ -18,9 +18,12 @@ app.get("/", (req, res) => {
 });
 
 //middleware
-app.use(cors({
-  methods: ["GET", "POST", "DELETE"],
-}));
+app.use(
+    cors({
+      origin: ["https://cine-view-ps.vercel.app", "http://localhost:3001"], 
+      credentials: true,
+    })
+  );
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
