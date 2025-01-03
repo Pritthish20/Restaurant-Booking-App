@@ -25,9 +25,9 @@ app.use(express.urlencoded({ extended: true }));
 
 //routes
 
-app.use("/api/vv/create",createBooking);
-app.use("/api/vv/delete/:id",deleteBooking);
-app.use("/api/vv/all",allBookings);
+app.post("/api/vv/create",createBooking);
+app.delete("/api/vv/delete/:id",deleteBooking);
+app.get("/api/vv/all",allBookings);
 
 
 //db
