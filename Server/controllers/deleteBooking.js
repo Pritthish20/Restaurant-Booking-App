@@ -9,7 +9,7 @@ const deleteBooking= async (req, res) => {
             return res.status(404).json({message: 'Booking not found'});
         }
 
-        res.json({message: 'Booking deleted successfully'});
+        return res.json({message: 'Booking deleted successfully'});
     } catch (error) {
         res.status(500).json({message: error.message});
     }
