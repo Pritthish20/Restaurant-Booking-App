@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 //middleware
 app.use(
     cors({
-      origin: ["https://cine-view-ps.vercel.app", "http://localhost:3001"], 
+      origin: ["https://restro-book-front.vercel.app"], 
       credentials: true,
     })
   );
